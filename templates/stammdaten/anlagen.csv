@@ -1,0 +1,3 @@
+rtId;name;customer.energyCommunityCustomer->customerNumber;facilityType;address.street;address.zipcode;address.cityTown;address.nationalCode;parent.basicCity->zipcode
+;Musterweg 1;1001;Household;Musterweg 1;5412;Puch bei Hallein;AT;5412
+;Baeckerei Musterplatz 3;1002;Business;Musterplatz 3;5412;Puch bei Hallein;AT;5412

@@ -1,0 +1,3 @@
+rtId;meteringPointNumber;name;energyConsumption;parent.basicEnergyOperatingFacility->name;parent.basicEnergyOperatingFacility->customer.energyCommunityCustomer->customerNumber
+;AT0099990000000000000000000000101;Bezug Musterweg 1;3500;Musterweg 1;1001
+;AT0099990000000000000000000000201;Bezug Baeckerei;45000;Baeckerei Musterplatz 3;1002

@@ -1,0 +1,3 @@
+rtId;meteringPointNumber;name;energyProductionCapacity;productionType;parent.basicEnergyOperatingFacility->name;parent.basicEnergyOperatingFacility->customer.energyCommunityCustomer->customerNumber
+;AT0099990000000000000000000000102;PV Musterweg 1;8;Solar;Musterweg 1;1001
+;AT0099990000000000000000000000202;PV Baeckerei;30;Solar;Baeckerei Musterplatz 3;1002
