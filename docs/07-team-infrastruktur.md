@@ -10,8 +10,16 @@ Security-Board, eine CI/CD-Vorlage und die Observability mit OpenTelemetry und
 dash0. In der zweiten Hälfte geht es um Betrieb und Resilienz. OctoMesh könnt ihr
 zur Datenintegration nutzen, müsst es aber nicht.
 
-Die Basis (Kubernetes-Cluster, Ingress, Zertifikate, OctoMesh, Datenbanken)
-betreibt die Lehre. Ihr arbeitet **auf** dieser Basis und beobachtet sie.
+Mit Administratorrechten betreibt ihr die Plattform und könnt sie von Grund auf
+neu aufsetzen. Die Basis (Kubernetes-Cluster, Netz, Talos-Konfiguration) gehört der
+FH-IT. Alles darüber ist euer Gebiet: Ingress, Zertifikate, OctoMesh, Datenbanken,
+Namespaces und Zugänge der Gruppen.
+
+**Euer Arbeitsrepo:** Ansible-Code, Konfiguration, Skripte und Anleitungen
+("Alles neu aufsetzen", "Gruppen und Zugang", "Betrieb und Fallen", Übungsumgebung)
+liegen in einem **privaten Repository**, in das die Betreuung euch einlädt. Netzadressen,
+kubeconfig und Zugangsdaten bekommt ihr persönlich, sie stehen in keinem Repo.
+Der Einstieg dort ist die `README.md`.
 
 ## Was ihr vorfindet
 

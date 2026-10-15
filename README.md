@@ -35,7 +35,8 @@ die allgemeinen OctoMesh-Tutorials sind auf Englisch online
 11. [Fallen und Hilfe](docs/11-fallen-und-hilfe.md)
 
 Im Ordner `scripts/` liegt `import-stammdaten.py`, in `templates/stammdaten/`
-liegen die Vorlagen dazu.
+liegen die Vorlagen dazu. Das Infra-Team arbeitet zusätzlich in einem eigenen, privaten
+Repository (Einladung durch die Betreuung).
 
 ## Wichtigste Regel
 
