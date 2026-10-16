@@ -9,6 +9,10 @@ die allgemeinen OctoMesh-Tutorials sind auf Englisch online
 > Vorschläge. Was noch nicht entschieden ist, steht auf der jeweiligen Seite
 > unter „Noch offen“.
 
+## Heute (Labor 1)
+
+**Start für Kleingruppen:** [Ziel für heute, wo liegt was, Lese-Zugang zu einer Energiegemeinschaft](docs/00-start-heute.md)
+
 ## Wo ihr anfangt
 
 | Ihr seid … | Lest zuerst |
