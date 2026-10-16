@@ -41,6 +41,14 @@ Der Einstieg dort ist die `README.md`.
 | **M3** | Infrastruktur der drei Handelsplattformen mit den IMC-Gruppen (Namespaces, Ingress, Secrets); Lasttest der Handels-APIs und der Melde-Endpunkte (Richtwert: 200 Aufrufe in 60 s, p95 ≤ 2 s); durchgehender Trace von der Gemeinschaft bis zur Plattform | Lasttest-Protokoll, Trace-Nachweis |
 | **M4** | Backup und Restore an eigenen Diensten und einem Testmandanten (nur gemeinsam mit der Lehre); Ausfallübungen mit Nachweis in dash0 (Plattform-Dienst weg während des Marktschlusses, Prognose-Dienst langsam); Runbook | Restore- und Ausfallbericht, Runbook |
 
+## Dash0: ein Dataset je Kleingruppe
+
+Das Labor hat einen **Dash0-Account** (Beobachtbarkeit: Logs, Metriken, Traces). Die Idee: Jede Kleingruppe bekommt ein
+**eigenes Dataset**, in dem sie ihre Dienste sieht, ohne die Daten der anderen. **Ihr bereitet das vor** und baut es auf:
+Datasets und Tokens, Operator im Cluster, Beobachtung der Namespaces `grp-<gruppe>`, Filter gegen unnötige Kosten, ein
+Beispieldienst mit Trace. Entwurf, Schritte und offene Fragen stehen in eurem privaten Repo (Seite 7 dort). Tokens sind
+Zugangsdaten und gehören nie in ein Repo oder einen Chat.
+
 ## Hinweise
 
 - Lasttests nur in Absprache und nicht während der Labortermine; das Cluster ist
