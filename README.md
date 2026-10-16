@@ -37,6 +37,7 @@ die allgemeinen OctoMesh-Tutorials sind auf Englisch online
 9. [Team Prognose (AIT)](docs/09-team-prognose.md)
 10. [Team Handelsplattform (IMC)](docs/10-team-handelsplattform.md): inkl. gemeinsamer Datenvertrag
 11. [Fallen und Hilfe](docs/11-fallen-und-hilfe.md)
+12. [Was läuft im Kubernetes-Cluster?](docs/12-kubernetes-uebersicht.md): Übersichtsgrafik
 
 Im Ordner `scripts/` liegt `import-stammdaten.py`, in `templates/stammdaten/`
 liegen die Vorlagen dazu. Das Infra-Team arbeitet zusätzlich in einem eigenen, privaten
