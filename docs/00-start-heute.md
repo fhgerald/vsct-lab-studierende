@@ -30,21 +30,27 @@ zu Labor 2.
 
 ## Eine Energiegemeinschaft ansehen: der Lese-Zugang
 
-Für heute gibt es **einen gemeinsamen Zugang zum Lesen**. Er gilt nur für die
-Referenzgemeinschaft `eg-urstein` mit **simulierten Daten**. Persönliche Zugänge für euer
-Team folgen nach Labor 2.
+Für heute gibt es **einen gemeinsamen Zugang zum Lesen** in zwei Referenzgemeinschaften mit
+**simulierten Daten**. Persönliche Zugänge für euer Team folgen nach Labor 2.
+
+| Gemeinschaft | Adresse | Preset |
+|---|---|---|
+| `eg-urstein` | `https://energy-community.machasing.com/eg-urstein` | `legacy`: 14 große Verbraucher, 3 PV, reiner Käufer |
+| `eg-lehrende` | `https://energy-community.machasing.com/eg-lehrende` | `pv-dorf`: 30 Haushalte, 2 Betriebe, 12 PV-Anlagen, mittags Überschuss |
 
 | | |
 |---|---|
-| Adresse | `https://energy-community.machasing.com/eg-urstein` |
-| Benutzername | `lesezugang` |
-| Passwort | bekommt ihr **im Labor** von den Lehrenden |
+| Benutzername | `lesezugang` (in beiden Gemeinschaften derselbe) |
+| Passwort | bekommt ihr **im Labor** von den Lehrenden (je Gemeinschaft ein eigenes) |
+
+`eg-lehrende` ist die Spielwiese der Lehrenden und für Vorführungen gedacht. Ihr seht dort die
+Daten, **ändert aber nichts**: Einstellungen und Resets sind den Lehrenden vorbehalten.
 
 **Regeln für den Lese-Zugang**
 
 - Er darf nur **ansehen**: Statistiken, Energiemengen, Zählpunkte, Kunden. Ändern geht nicht.
 - Das Passwort gebt ihr nicht außerhalb des Kurses weiter und schreibt es nicht in ein Repo oder einen Chat.
-- Nach Labor 2 wird der Zugang abgeschaltet und durch euren eigenen ersetzt.
+- Sobald euer eigener Mandant bereit ist (die Infra-Gruppe baut ihn auf, spätestens nach Labor 2), wird der Zugang abgeschaltet.
 
 **Was ihr damit machen könnt**
 
@@ -55,8 +61,8 @@ Team folgen nach Labor 2.
 4. Öffnet **Zählpunkte** und **Kunden**: wie viele Verbraucher und Erzeuger hat die Gemeinschaft?
 5. Schreibt auf, was euch auffällt und was ihr für euer Team wissen wollt.
 
-`eg-urstein` ist die Referenzgemeinschaft (Preset `legacy`: 14 große Verbraucher, 3 PV-Anlagen, reiner
-Käufer). Die Lehrenden zeigen live auch `eg-lehrende` (Preset `pv-dorf`).
+Für interessante Effizienzzahlen nehmt `eg-lehrende` (mittags viel Überschuss). `eg-urstein` ist als reiner
+Käufer eher das Gegenbeispiel: Vergleicht beide.
 
 ## Wie es weitergeht
 
