@@ -1,0 +1,28 @@
+# Übung: Ein Pod, der die Schnittstelle aus dem Cluster heraus alle 2 s über den Service aufruft,
+# so wie es der Dienst von AIT täte. Ausgabe ansehen: kubectl logs -f aufrufer
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aufrufer
+spec:
+  containers:
+    - name: curl
+      image: curlimages/curl:8.11.1
+      env:
+        - name: API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: tagessummen
+              key: API_KEY
+      command: ["sh", "-c"]
+      args:
+        - |
+          while true; do
+            echo "$(date +%T) $(curl -s -o /dev/null -m 5 -D - -H "X-API-Key: $API_KEY" \
+              'http://tagessummen/tagessummen?von=2026-11-05&bis=2026-11-05' | grep -i -E '^HTTP|^x-pod' | tr -d '\r' | tr '\n' ' ')"
+            sleep 2
+          done
+      resources:
+        limits:
+          cpu: 50m
+          memory: 32Mi

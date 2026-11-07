@@ -39,6 +39,8 @@ die allgemeinen OctoMesh-Tutorials sind auf Englisch online
 11. [Fallen und Hilfe](docs/11-fallen-und-hilfe.md)
 12. [Was läuft im Kubernetes-Cluster?](docs/12-kubernetes-uebersicht.md): Übersichtsgrafik
 
+**Beispiele:** [Tagessummen-Dienst auf Kubernetes](beispiele/tagessummen/README.md) (Labor 11.11.: kind, Kontingent, Secret, Probes, Selbstheilung, Knotenausfall, Rollback)
+
 Im Ordner `scripts/` liegt `import-stammdaten.py`, in `templates/stammdaten/`
 liegen die Vorlagen dazu. Das Infra-Team arbeitet zusätzlich in einem eigenen, privaten
 Repository (Einladung durch die Betreuung).

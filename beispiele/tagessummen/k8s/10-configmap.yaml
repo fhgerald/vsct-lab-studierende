@@ -1,0 +1,10 @@
+# Einstellungen ohne Geheimnisse. Für die Übung eg-lehrende; später der Mandant eurer Gemeinschaft.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tagessummen
+data:
+  OCTO_TENANT: eg-lehrende
+  OCTO_TOKEN_URL: https://connect.machasing.com/connect/token
+  OCTO_ASSETS_URL: https://assets.machasing.com
+  ZEITZONE: Europe/Vienna

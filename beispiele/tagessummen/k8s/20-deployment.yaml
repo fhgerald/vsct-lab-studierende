@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tagessummen
+  labels:
+    app: tagessummen
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tagessummen
+  template:
+    metadata:
+      labels:
+        app: tagessummen
+    spec:
+      # Fällt ein Knoten aus, verlegt Kubernetes die Pods standardmäßig erst nach 300 s.
+      # Für die Übung kürzer; überlegt, warum der Standard so lang ist.
+      tolerations:
+        - key: node.kubernetes.io/unreachable
+          operator: Exists
+          effect: NoExecute
+          tolerationSeconds: 30
+        - key: node.kubernetes.io/not-ready
+          operator: Exists
+          effect: NoExecute
+          tolerationSeconds: 30
+      containers:
+        - name: tagessummen
+          image: ghcr.io/fhgerald/tagessummen:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: tagessummen
+            - secretRef:
+                name: tagessummen   # legt ihr selbst an, siehe README; nie als Datei ins Repo
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 250m
+              memory: 128Mi
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8080
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 8080
+            periodSeconds: 10
+            timeoutSeconds: 5

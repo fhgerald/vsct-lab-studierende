@@ -1,0 +1,18 @@
+# Wie euer Namespace grp-<team> im Lab-Cluster: gleiches Kontingent, gleiche Pflicht zu Limits.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: grp-uebung
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: kontingent
+  namespace: grp-uebung
+spec:
+  hard:
+    limits.cpu: "4"
+    limits.memory: 8Gi
+    requests.storage: 20Gi
+    pods: "30"
+    services.loadbalancers: "1"

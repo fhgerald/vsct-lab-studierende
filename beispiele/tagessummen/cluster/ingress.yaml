@@ -1,0 +1,19 @@
+# Nur für den Lab-Cluster (nicht kind). <team> im Hostnamen ersetzen.
+# Ohne eigenen tls:-Block gilt das Wildcard-Zertifikat für *.machasing.com.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: tagessummen
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: <team>-tagessummen.machasing.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: tagessummen
+                port:
+                  number: 80
