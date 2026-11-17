@@ -12,8 +12,9 @@ Dinge, die erfahrungsgemäß Zeit kosten.
   Mitternacht Wien (`22:00Z` im Sommer, `23:00Z` im Winter).
 - **15-Minuten-Raster.** Abfragen und Meldungen immer auf `:00`, `:15`, `:30`,
   `:45` legen.
-- **Der laufende Tag hat noch keine Verteilung.** Sie kommt erst am Folgetag; der
-  Vortag wird nach dem Meldeschluss eingefroren.
+- **Der laufende Tag hat noch keine Verteilung.** Sie kommt erst am Folgetag
+  (abends, 20:00 UTC); der Vortag wird nach dem Meldeschluss eingefroren. Fehlt
+  ein Tag länger, der Betreuung melden.
 
 ## Eigene Zähler und Endpunkte
 

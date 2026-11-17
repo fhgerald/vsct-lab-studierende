@@ -18,6 +18,16 @@ Verteilung D+1 ([Seite 4](04-daten-und-simulation.md)). Eure Schnittstellen nach
 außen folgen den Verträgen; wie ihr sie baut (OctoMesh-Pipelines oder ein eigener
 Dienst), ist euch freigestellt, solange Authentisierung und Rollen stimmen.
 
+## Zuständigkeiten
+
+| Wer | Aufgabe |
+|---|---|
+| **Lab-Plattform** (Lehrende) | Tägliche Simulation und **Verteilung D+1**. Die Verteilung läuft jeden Abend um 20:00 UTC und schreibt den **Vortag**, also nach dessen Meldeschluss. Je Anker (Zählpunkt und Register) und Tag entstehen 96 Viertelstundenwerte (92 bzw. 100 an Tagen der Zeitumstellung) in `G.03`, `G.01T` und `P.01T`, dazu die Rollups `ec…a02` bis `a06`. Fehlt ein Tag, holt die Plattform ihn nach. |
+| **Ihr** | Lücken und Unstimmigkeiten **erkennen** (fehlende Tage, fehlende Viertelstunden, Σ `G.03` ≠ Σ (`G.01T` − `P.01T`)), in eurem **Dashboard anzeigen** und der **Betreuung melden** (FH-Teams oder im Labor; mit Tag, Mandant, Register und Anker, **ohne** Token). Die Verteilung startet und schreibt ihr nicht selbst. |
+
+Zwei Hinweise dazu stehen auf [Seite 4](04-daten-und-simulation.md) unter
+„Abfragen“: Rundung auf 0,001 kWh und die Reihenfolge beim seitenweisen Lesen.
+
 ## Aufgaben nach Meilenstein
 
 | Bis | Aufgaben | Ihr liefert |

@@ -84,6 +84,15 @@ Richtwerte je Kalenderjahr; im Sommer und Winter unterscheiden sie sich deutlich
   (`runtimeEntities`) `attributeNames` weglässt, bekommt alle Attribute.
 - **GraphQL-Fehler kommen mit HTTP 200.** Immer das Feld `errors` in der Antwort
   prüfen.
+- **Rundung.** Die Verteilung rundet je Viertelstunde auf 0,001 kWh **ab**.
+  `G.01T` liegt deshalb leicht unter `G.01`. Das ist so gewollt und keine Lücke.
+- **Seitenweises Lesen von Stream-Daten.** Seit OctoMesh 3.5.77 (im Labor seit
+  17.11.) haben die Seiten eine feste Reihenfolge: nach Zeit, dann nach `rtId`.
+  `sortOrder` ist optional. Vorher war die Reihenfolge ohne `sortOrder` nicht
+  festgelegt; das war ein Fehler der Plattform.
+
+Wer was macht (Plattform oder ihr), steht auf der Teamseite
+[Energiegemeinschaft](08-team-energiegemeinschaft.md) unter „Zuständigkeiten“.
 
 Weiterführend: Tutorial
 [Accessing data](https://docs.meshmakers.cloud/docs/tutorials/accessingData).
